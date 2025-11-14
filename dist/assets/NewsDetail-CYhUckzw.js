@@ -1,4 +1,4 @@
-import{j as e}from"./index-BvCrAbeH.js";import{b as i,L as a}from"./router-BmMZLsWO.js";import"./vendor-BIF_SMrh.js";const h=()=>{const{slug:o}=i(),t={title:"Hope Foundation Reaches Milestone: 500 Students Supported",content:`
+import{j as e}from"./index-DejTMX1E.js";import{b as i,L as a}from"./router-BmMZLsWO.js";import"./vendor-BIF_SMrh.js";const h=()=>{const{slug:o}=i(),t={title:"Hope Foundation Reaches Milestone: 500 Students Supported",content:`
       <p>We are incredibly proud to announce that Hope Foundation has reached a significant milestone in our mission to make education accessible to all. As of this month, we have successfully supported over 500 students in their educational journey, providing scholarships, mentorship, and comprehensive support programs.</p>
 
       <p>This achievement represents years of dedication from our team, generous support from our donors, and the unwavering belief that education can transform lives and communities. Each of these 500 students has a unique story, but they all share a common thread: the determination to pursue their educational dreams despite financial barriers.</p>

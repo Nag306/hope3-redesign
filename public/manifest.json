@@ -1,21 +1,16 @@
 {
-  "name": "Hope Foundation",
-  "short_name": "Hope Foundation",
-  "description": "Empowering Education for All",
+  "name": "Hope3 Foundation",
+  "short_name": "Hope3",
+  "description": "Empowering Education in Haiti",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#14b8a6",
   "icons": [
     {
-      "src": "/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
     }
   ]
 }
