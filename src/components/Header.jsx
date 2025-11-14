@@ -25,10 +25,10 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">H</span>
+              <span className="text-white font-bold text-lg">H3</span>
             </div>
             <span className="font-serif font-bold text-xl text-gray-900 dark:text-white">
-              Hope Foundation
+              Hope3 Foundation
             </span>
           </Link>
 
@@ -57,8 +57,8 @@ const Header = () => {
                 {isDark ? '☀️' : '🌙'}
               </button>
               
-              <Link to="/apply" className="btn-primary">
-                Apply Now
+              <Link to="/volunteer" className="btn-primary">
+                Get Involved
               </Link>
               
               <Link to="/donate" className="btn-secondary">
@@ -114,11 +114,11 @@ const Header = () => {
               
               <div className="pt-4 space-y-3">
                 <Link
-                  to="/apply"
+                  to="/volunteer"
                   onClick={() => setIsMenuOpen(false)}
                   className="btn-primary block text-center"
                 >
-                  Apply Now
+                  Get Involved
                 </Link>
                 <Link
                   to="/donate"

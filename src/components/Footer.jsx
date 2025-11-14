@@ -11,7 +11,7 @@ const Footer = () => {
   ];
 
   const supportLinks = [
-    { name: 'Apply Now', href: '/apply' },
+    { name: 'Get Involved', href: '/volunteer' },
     { name: 'Volunteer', href: '/volunteer' },
     { name: 'Donate', href: '/donate' },
     { name: 'Contact', href: '/contact' },
@@ -25,13 +25,13 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">H</span>
+                <span className="text-white font-bold text-lg">H3</span>
               </div>
-              <span className="font-serif font-bold text-xl">Hope Foundation</span>
+              <span className="font-serif font-bold text-xl">Hope3 Foundation</span>
             </Link>
             <p className="text-gray-300 mb-6 max-w-md">
-              Empowering education for all. We believe every student deserves access to quality education 
-              and the opportunity to build a brighter future.
+              Providing quality education and support to children in Haiti, breaking the cycle of poverty 
+              through learning and opportunity.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
@@ -90,7 +90,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {currentYear} Hope Foundation. All rights reserved.
+              © {currentYear} Hope3 Foundation. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link to="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">

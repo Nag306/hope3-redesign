@@ -3,67 +3,9 @@ import HeroSection from '../components/HeroSection';
 import SectionTitle from '../components/SectionTitle';
 import ProgramCard from '../components/ProgramCard';
 import TestimonialCarousel from '../components/TestimonialCarousel';
+import { programs, testimonials, organizationInfo } from '../data/hope3Data';
 
 const Home = () => {
-  const programs = [
-    {
-      id: 1,
-      title: 'STEM Education Program',
-      description: 'Comprehensive science, technology, engineering, and mathematics education for underserved communities.',
-      category: 'Education',
-      icon: '🔬',
-      duration: '12 months',
-      participants: 150,
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
-      slug: 'stem-education'
-    },
-    {
-      id: 2,
-      title: 'Mentorship Network',
-      description: 'One-on-one mentoring connecting students with industry professionals and successful alumni.',
-      category: 'Mentorship',
-      icon: '🤝',
-      duration: '6 months',
-      participants: 200,
-      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
-      slug: 'mentorship-network'
-    },
-    {
-      id: 3,
-      title: 'Digital Literacy Initiative',
-      description: 'Teaching essential computer skills and digital literacy to bridge the technology gap.',
-      category: 'Technology',
-      icon: '💻',
-      duration: '3 months',
-      participants: 300,
-      image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
-      slug: 'digital-literacy'
-    }
-  ];
-
-  const testimonials = [
-    {
-      name: 'Sarah Johnson',
-      quote: 'The scholarship program changed my life completely. I went from struggling to pay for books to graduating with honors in Computer Science.',
-      program: 'STEM Scholarship Recipient',
-      year: 'Class of 2023',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80'
-    },
-    {
-      name: 'Michael Chen',
-      quote: 'The mentorship I received helped me navigate college applications and career choices. Now I\'m giving back as a mentor myself.',
-      program: 'Mentorship Program Graduate',
-      year: 'Class of 2022',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80'
-    },
-    {
-      name: 'Emily Rodriguez',
-      quote: 'Hope Foundation didn\'t just provide financial support, they believed in my potential when I didn\'t believe in myself.',
-      program: 'Full Scholarship Recipient',
-      year: 'Class of 2024',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80'
-    }
-  ];
 
   return (
     <main>
@@ -76,7 +18,7 @@ const Home = () => {
             <div>
               <SectionTitle
                 title="Our Mission"
-                subtitle="Breaking barriers to education and creating pathways to success for every student."
+                subtitle={organizationInfo.mission}
                 centered={false}
               />
               <div className="mt-8 space-y-6">
@@ -85,8 +27,8 @@ const Home = () => {
                     <span className="text-primary-600 dark:text-primary-400">🎯</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Equal Access</h3>
-                    <p className="text-gray-600 dark:text-gray-300">Ensuring every student has access to quality education regardless of their background.</p>
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Quality Education</h3>
+                    <p className="text-gray-600 dark:text-gray-300">Providing access to quality primary education for children in rural Haiti.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -94,8 +36,8 @@ const Home = () => {
                     <span className="text-primary-600 dark:text-primary-400">🌱</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Holistic Support</h3>
-                    <p className="text-gray-600 dark:text-gray-300">Providing not just financial aid, but mentorship, resources, and ongoing guidance.</p>
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Community Partnership</h3>
+                    <p className="text-gray-600 dark:text-gray-300">Working hand-in-hand with local communities to create sustainable change.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -103,16 +45,16 @@ const Home = () => {
                     <span className="text-primary-600 dark:text-primary-400">🚀</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Future Leaders</h3>
-                    <p className="text-gray-600 dark:text-gray-300">Empowering students to become leaders and change-makers in their communities.</p>
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Breaking Poverty Cycles</h3>
+                    <p className="text-gray-600 dark:text-gray-300">Empowering children through education to break the cycle of poverty.</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Students collaborating on a project"
+                src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Children learning in Haiti"
                 className="rounded-2xl shadow-xl"
                 loading="lazy"
               />
@@ -126,12 +68,12 @@ const Home = () => {
         <div className="max-w-7xl mx-auto">
           <SectionTitle
             title="Our Programs"
-            subtitle="Comprehensive educational programs designed to support students at every stage of their journey."
+            subtitle="Comprehensive programs supporting education, nutrition, and community development in Haiti."
             className="mb-12"
           />
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {programs.map((program) => (
+            {programs.slice(0, 3).map((program) => (
               <ProgramCard key={program.id} program={program} />
             ))}
           </div>
@@ -155,23 +97,23 @@ const Home = () => {
       <section className="section-padding bg-primary-600 dark:bg-primary-700">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-6">
-            Ready to Start Your Journey?
+            Help Us Transform Lives in Haiti
           </h2>
           <p className="text-xl text-primary-100 mb-8">
-            Join thousands of students who have transformed their lives through education.
+            Join us in providing quality education and breaking the cycle of poverty for children in Haiti.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
-              to="/apply" 
+              to="/volunteer" 
               className="bg-white text-primary-600 hover:bg-gray-100 font-medium py-3 px-8 rounded-lg transition-colors duration-200"
             >
-              Apply Now
+              Get Involved
             </Link>
             <Link 
               to="/donate" 
               className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600 font-medium py-3 px-8 rounded-lg transition-colors duration-200"
             >
-              Support Our Mission
+              Donate Now
             </Link>
           </div>
         </div>
